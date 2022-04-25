@@ -27,9 +27,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+      <!--div class="collapse navbar-collapse order-3" id="navbarCollapse"-->
         <!-- Left navbar links -->
-        <ul class="navbar-nav">
+        <!--ul class="navbar-nav">
           <li class="nav-item">
             <a href="home" class="nav-link">Beranda</a>
           </li>
@@ -37,7 +37,7 @@
             <a href="#" class="nav-link">Pengumuman</a>
           </li>
         </ul>
-      </div>
+      </div-->
 
       <!-- Right navbar links -->
       <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">

@@ -9,7 +9,7 @@ class Evaluasi extends Model
 {
     use HasFactory;
     protected $table = "saw_evaluasi";
-    protected $fillable = ['id_alternatif','id_kriteria'];
+    protected $fillable = ['id_alternatif','id_kriteria','value'];
 
     public function alternatif() {
         return $this->belongsTo(Alternatif::class, 'id_alternatif');

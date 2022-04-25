@@ -36,7 +36,7 @@
 
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="card-title m-0">Selamat Datang di Pendaftaran Asisten Matakuliah Jaringan Komputer!!</h5>
+                <h4 class="card-title m-0">Selamat Datang di Pendaftaran Asisten Matakuliah Jaringan Komputer!!</h4>
               </div>
               <div class="card-body">
                 <h6 class="card-title">Jika anda berminat untuk mendaftar silahkan pahami ketentuan berikut:</h6>
@@ -53,7 +53,15 @@
                   Jika sudah memahami ketentuan diatas, silahkan daftar dan isi syarat pendaftaran yang diperlukan melalui tombol dibawah ini:
                   <hr>
                 </p>
-                <a href="#" class="btn btn-block btn-primary">Daftar</a>
+                <?php
+                    if ($none!=null) {
+                      echo "<div class=\"alert alert-info alert-dismissible\">
+                      <center><b>TERIMA KASIH TELAH BERMINAT MENDAFTAR SEBAGAI ASISTEN DOSEN MATAKULIAH INI</b> <br><br> PENGUMUMAN PENERIMAAN ASISTEN DOSEN AKAN DIHUBUNGI SETELAH AKHIR TANGGAL PENDAFTARAN</center>
+                      </div>";
+                    } elseif ($none==null OR $none!=Auth::user()->id) {
+                      echo "<a href=\"form\" class=\"btn btn-block btn-primary\">Daftar</a>";
+                    }
+                ?>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ class Alternatif extends Model
 {
     use HasFactory;
     protected $table = "saw_alternatif";
-    protected $fillable = ['id_user','transkrip'];
+    protected $fillable = ['id_user','transkrip','lamaran'];
 
     public function user() {
         return $this->belongsTo(User::class, 'id_user');

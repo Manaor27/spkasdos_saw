@@ -17,6 +17,7 @@ class CreateSawAlternatifTable extends Migration
             $table->id();
             $table->unsignedBigInteger('id_user');
             $table->string('transkrip');
+            $table->string('lamaran');
             $table->foreign('id_user')->references('id')->on('users')->onDelete('CASCADE');
             $table->timestamps();
         });

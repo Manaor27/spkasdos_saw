@@ -40,5 +40,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::middleware(['mahasiswa'])->group(function () {
         Route::get('mahasiswa', [MahasiswaController::class, 'index']);
+        Route::get('form', [MahasiswaController::class, 'form']);
+        Route::post('simpanData', [MahasiswaController::class, 'simpan']);
     });
 });

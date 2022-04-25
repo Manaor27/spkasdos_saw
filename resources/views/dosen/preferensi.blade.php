@@ -56,6 +56,7 @@
                       $P = array();
                       $b = count($W);
                       $no = 1;
+                      rsort($P);
                       echo "<tbody>";
                       foreach($R as $i => $r){
                         for($j = 0; $j < $b; $j++){

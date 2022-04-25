@@ -61,7 +61,8 @@
                               Aksi 
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Lihat</a>
+                            <a class="dropdown-item" href="transkrip/{{$a->transkrip}}" target="_BLANK">Lihat Transkrip Nilai</a>
+                            <a class="dropdown-item" href="lamaran/{{$a->lamaran}}" target="_BLANK">Lihat Surat Lamaran</a>
                             <div class="dropdown-divider"></div>
                             <!--a class="dropdown-item" href="#">Edit</a-->
                             <a class="dropdown-item" href="{{url('/hapusAlternatif/'.$a->id)}}" onclick="return confirm('Apakah Yakin Ingin Menghapus Data Ini?')">
