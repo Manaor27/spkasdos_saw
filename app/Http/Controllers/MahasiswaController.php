@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Alternatif;
 use App\Models\Evaluasi;
 use Auth;
+Use RealRashid\SweetAlert\Facades\Alert;
 
 class MahasiswaController extends Controller
 {
@@ -50,6 +51,6 @@ class MahasiswaController extends Controller
             'id_kriteria' => '3',
             'value' => $request->nilai
         ]);
-        return redirect("/home");
+        return redirect("/home")->with('success', 'Task Created Successfully!');
     }
 }

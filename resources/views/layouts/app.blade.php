@@ -167,6 +167,7 @@
 
     <!-- Main content -->
     @yield('content')
+    @include('sweetalert::alert')
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">

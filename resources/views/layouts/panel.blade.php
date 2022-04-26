@@ -15,6 +15,11 @@
 <body class="hold-transition layout-top-nav">
 <div class="wrapper">
 
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="https://www.ukdw.ac.id/wp-content/uploads/2017/10/logo-ukdw.png" alt="Logo" height="80" width="60">
+  </div>
+
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
@@ -59,7 +64,7 @@
   <!-- /.navbar -->
 
     @yield('content')
-
+    @include('sweetalert::alert')
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->

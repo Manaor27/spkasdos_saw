@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Kriteria;
+Use RealRashid\SweetAlert\Facades\Alert;
 
 class KriteriaController extends Controller
 {
@@ -18,6 +19,7 @@ class KriteriaController extends Controller
         $k->bobot = $request->bobot;
         $k->atribut = $request->atribut;
         $k->save();
+        alert()->success('Berhasil','Kriteria Berhasil Di Ubah!');
         return redirect('/kriteria');
     }
 }

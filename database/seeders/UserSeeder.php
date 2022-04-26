@@ -45,5 +45,25 @@ class UserSeeder extends Seeder
             'created_at' => \Carbon\Carbon::now(),
             'email_verified_at' => \Carbon\Carbon::now()
         ]);
+        DB::table('users')->insert([
+            'kode' => '72190273',
+            'name' => 'Yonathan Sebastian',
+            'foto' => '72190273.jpg',
+            'email' => 'jonas@gmail.com',
+            'password' => Hash::make('jonas123'),
+            'role' => 'mahasiswa',
+            'created_at' => \Carbon\Carbon::now(),
+            'email_verified_at' => \Carbon\Carbon::now()
+        ]);
+        DB::table('users')->insert([
+            'kode' => '72190325',
+            'name' => 'Indra Nugraha',
+            'foto' => '72190325.jpg',
+            'email' => 'indra@gmail.com',
+            'password' => Hash::make('indra123'),
+            'role' => 'mahasiswa',
+            'created_at' => \Carbon\Carbon::now(),
+            'email_verified_at' => \Carbon\Carbon::now()
+        ]);
     }
 }
